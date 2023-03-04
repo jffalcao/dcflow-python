@@ -1,0 +1,14 @@
+version: '3'
+services:
+  devcontainer:
+    container_name: python
+    image: jfrflabs/python:1.0.0
+    build: .
+    working_dir: /wspace
+    entrypoint: /bin/bash
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/wspace
+    ports:
+      - 5001:5000
