@@ -1,7 +1,7 @@
 version: '3'
 services:
   devcontainer:
-    container_name: python
+    container_name: dcflow-python-devcontainer
     image: jfrflabs/python:1.0.0
     build: .
     working_dir: /wspace
